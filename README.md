@@ -62,5 +62,5 @@ The main files of the app could be found under the folder app:
 
 ## Thank you!
 
-We really appreciate all kinds of feedback and contributions.
+I really appreciate all kinds of feedback and contributions.
 
