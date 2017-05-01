@@ -795,6 +795,8 @@ ropeMechanism.drawThetaValue = function(x,y){
     return group;
 }
 
+/********************************************************************************************/
+
 ropeMechanism.updateDisplayValues = function(){
     var percentageChange    = (ropeMechanism.strainSolutionOne !== 0 && ropeMechanism.strainSolutionTwo !==0 )? 100 - (100*ropeMechanism.strainSolutionOne/ropeMechanism.strainSolutionTwo) : 0;
     ropeMechanism.solutionOneValue.text(ropeMechanism.strainSolutionOne.toFixed(5));
