@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Strain Widget</title>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/rope_mechanism.js"></script>
+	<script type="text/javascript" src="/bower_components/konva/konva.js"></script>
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<h1>Small Strain</h1>
+	</header>
+	<section>
+		<div id="description">
+			<div class="description__content">
+				<p><b>Strain</b> is a measured quantity and is due to a change in shape because of a load. Normal strain occurs when there is deformation in the direction of the force.</p>
+				<p>In this activity you will change θ(theta) and observe:</p>
+				<ul>
+					<li>1. The changes to the strain of a wire (<b>BD</b>).</li>
+					<li>2. Two methods of calculating strain.</li>
+				</ul>
+			</div>
+		</div>
+		<div id="canvas"></div>
+		<div class="slider">
+			<h5>Drag slider to change θ</h5>
+			<input id="angleSlider" type="range" min="0" max="25" value="0" step="1"/>
+			<h5>Degrees(°)</h5>
+		</div>
+	</section>
+</body>
+</html>
