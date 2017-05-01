@@ -41,13 +41,13 @@ The website was created using [ExpressJS](http://expressjs.com/es/) and runs on 
 
 [Bower](https://www.npmjs.com/package/bower) was used as a package manager and all the external libraries could be found within the folder bower_modules.
 
-The core of the application is Konva JS, a 2d html5 canvas library ready to use shapes and animations.
+The core of the application is Konva JS, a 2d html5 canvas library ready to use shapes and animations. In addition, Polymer was also used to create the widget as a custom web component "strain-widget".
 
 The main files of the app could be found under the folder app:
 
 	* index.html : The whole view of the widget.
 	
-	* js/main.js : Inits and binds the events on the view with the model rope_mechanism.
+	* widget/strain_widget.html : Custom web component created using Polymer. Contains the canvas and the slider for the widget.
 
 	* js/rope_mechanism.js : Has the logic for the whole application, runs the simulation and calculates the strain values.
 
@@ -57,6 +57,7 @@ The main files of the app could be found under the folder app:
 * [Konva](https://konvajs.github.io/)
 * [JQuery](https://jquery.com/)
 * [ExpressJS](http://expressjs.com/es/)
+* [Polymer](https://www.polymer-project.org/)
 
 
 ## Thank you!

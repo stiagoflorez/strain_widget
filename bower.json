@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "jquery": "^3.2.1",
-    "konva": "^1.6.1"
+    "konva": "^1.6.1",
+    "platform": "Polymer/platform#^0.4.2",
+    "polymer": "Polymer/polymer#^1.9.1"
   }
 }

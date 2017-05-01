@@ -8,10 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	
-	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/rope_mechanism.js"></script>
 	<script type="text/javascript" src="/bower_components/konva/konva.js"></script>
 	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="/bower_components/platform/platform.js"></script>
+
+	<link rel="import" href="widget/strain_widget.html">
 
 
 </head>
@@ -30,13 +32,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="slider">
-			<h5>Drag slider to change θ</h5>
-			<input id="angleSlider" type="range" min="0" max="25" value="0" step="1"/>
-			<h5>Degrees(°)</h5>
-		</div>
-		<div id="canvas" alt="The interaction shows a bar (AB) supported by a wire (BD). The small strain is calculated using two solutions. As force is applied to the bar, the wire deforms.  Theta can be modified and the strain results are calculated using the two solutions.  A comparison is shown of the two solutions that is based on a percentage difference between the two solutions."></div>
-		
+		<strain-widget></strain-widget>
 	</section>
 </body>
 </html>

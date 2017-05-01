@@ -1,0 +1,37 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="strain-widget">
+  	<template>
+  		<div class="widget__container">
+	    	<div class="slider">
+				<h5>Drag slider to change θ</h5>
+				<input id="angleSlider" type="range" min="0" max="25" value="0" step="1"/>
+				<h5>Degrees(°)</h5>
+			</div>
+			<div id="canvas" alt="The interaction shows a bar (AB) supported by a wire (BD). The small strain is calculated using two solutions. As force is applied to the bar, the wire deforms.  Theta can be modified and the strain results are calculated using the two solutions.  A comparison is shown of the two solutions that is based on a percentage difference between the two solutions."></div>
+		</div>
+  	</template>
+</dom-module>
+
+<script>
+  	Polymer({
+    	is 				: 'strain-widget',
+    	canvasWidth		: 650,
+    	canvasHeight	: 750,
+
+    	ready: function() {
+
+    		this.initCanvas();
+    		this.initSlider();
+        	
+      	},
+      	initCanvas: function() {
+   			ropeMechanism.initMechanism(this.canvasWidth, this.canvasHeight);
+		},
+		initSlider: function() {
+			$(this.$.angleSlider).change(function(evt) {
+  				ropeMechanism.rotateBar(evt.target.value);
+			});
+		}
+  	});
+</script>
