@@ -3,8 +3,10 @@
 Strain is a measured quantity and is due to a change in shape because of  a load. Normal strain occurs when there is deformation in the direction of the force. 
 
 In this activity you will change the angle 𝜽 (theta) and observe:
--the changes to the strain of a wire (BD). 
--two methods of calculating strain.
+
+	* the changes to the strain of a wire (BD). 
+	
+	* two methods of calculating strain.
 
 
 ## What will you get?
@@ -18,8 +20,7 @@ The strain value is calculated in two different ways and they both are shown bel
 
 To run the widget you should either:
 	
-	* Clone the project:
-		git clone https://github.com/stiagoflorez/strain_widget.git
+	* Clone the project: git clone https://github.com/stiagoflorez/strain_widget.git
 
 	* Download the project.
 
@@ -36,7 +37,7 @@ Finally, you should start the web server and go to http://localhost:3000/ in you
 
 ## Architecture
 
-The website was created using [ExpressJS](http://expressjs.com/es/) and runs on the port 3000. Express will work as the web server and routing handler, whereas we use Html, javascript, and CSS for the view.
+The website was created using [ExpressJS](http://expressjs.com/es/) and runs on the port 3000. Express will work as the web server and routing handler, whereas I use Html, javascript, and CSS for the view.
 
 [Bower](https://www.npmjs.com/package/bower) was used as a package manager and all the external libraries could be found within the folder bower_modules.
 
@@ -51,10 +52,11 @@ The main files of the app could be found under the folder app:
 	* js/rope_mechanism.js : Has the logic for the whole application, runs the simulation and calculates the strain values.
 
 
-## External libraries
+## Technologies
 
 * [Konva](https://konvajs.github.io/)
 * [JQuery](https://jquery.com/)
+* [ExpressJS](http://expressjs.com/es/)
 
 
 ## Thank you!
